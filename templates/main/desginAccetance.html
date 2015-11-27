@@ -1,0 +1,21 @@
+
+  <div>
+    <span class="item searc_border_bottom">
+      <a>
+        <img  src="{{evalDesginer.img}}" class="desgin_photo_little"  ng-click="iconInfo(evalDesginer)">
+      </a>
+      
+      <a class="fal_left" >
+        <img src="{{evalDesginer.works[0].img}}" class="bid_img2" ng-click="imagesView(evalDesginer, '设计师页面')" >
+      </a>
+      
+      <p class="fal_left sty magrin_t20" >
+        <span  ng-click="iconInfo(evalDesginer)"> 
+          <i class="font-size12">{{evalDesginer.name || '等待上传设计图'}}</i><br>
+          <i class="font-size12">{{evalDesginer.type}}</i><br>
+        </span> 
+        <span class="font-size12">{{evalDesginer.desginCost}}</span>
+      </p>
+       <a ng-click="desginerTem()" class="house_icon"> 支付设计费</a>
+    </span>
+  </div>

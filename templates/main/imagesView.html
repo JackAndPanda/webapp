@@ -1,0 +1,15 @@
+
+
+  <ion-slide padding="true" scroll="false">
+    <div >
+      <div class="title2"><a class="title" >设计师作品</a><a class="modalClose" ng-click="closeTemplate(desginElem)">关闭</a></div>
+    </div>
+    <div id="container"  >
+      <div id="content"  class="big_img_show">
+        <img ng-repeat="item in imageInfo.works" ng-src="{{item.img}}" zoomable id="{{item.id}}" on-hold="savePhoto()" >
+      </div>
+    </div>
+
+    <canvas id="canvas" width="80%"></canvas>
+
+</ion-slide>
